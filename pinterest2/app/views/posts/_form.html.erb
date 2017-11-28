@@ -1,0 +1,15 @@
+
+<h3 class="text-center">Crea una nuevo Post</h3>
+
+<%=form_for(@new_post) do |f| %>
+<div class="formularioMoneda">
+<%= f.text_field :title, placeholder: "Ingresa el nombre del post" %>
+
+<%=f.text_field :body, placeholder: "Ingresa la descripcion del post "%>
+
+<%= f.label :Imagen %>
+  <%= f.file_field :image %>
+
+<%= f.submit "Crear Post", class:"btn tableroMonedas white"%>
+<%end%>
+</div>

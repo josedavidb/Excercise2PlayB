@@ -1,1 +1,10 @@
-Hola mundo
+<h1>Bienvenido a Pinterest2!</h1>
+
+
+
+<% @array_of_posts.each do |iterator_post| %>
+<div class="listaMonedas">
+<h2><%= link_to iterator_post.title, "/posts/#{iterator_post.id}" %></h2>
+<p><%= iterator_post.body %></p>
+</div>
+<%end%>

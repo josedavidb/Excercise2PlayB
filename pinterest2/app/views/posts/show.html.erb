@@ -1,0 +1,9 @@
+
+<h1 class="text-center">Crea una nuevo Post</h1>
+
+<h2><%= @new_post.title%> </h2> 
+
+<p><%= @new_post.body %></p
+
+<%=link_to "Editar", edit_post_path%>
+<%=link_to "Eliminar", post_path, method: :delete%>

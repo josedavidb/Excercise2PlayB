@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 
 
 
-		@new_post = Post.new(post_params)
+		@new_post = current_user.posts.new(post_params)
 
 
 

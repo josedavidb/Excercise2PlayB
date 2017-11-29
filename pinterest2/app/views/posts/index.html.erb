@@ -6,5 +6,7 @@
 <div class="listaMonedas">
 <h2><%= link_to iterator_post.title, "/posts/#{iterator_post.id}" %></h2>
 <p><%= iterator_post.body %></p>
+
+<%=image_tag iterator_post.image.url(:medium)%>
 </div>
 <%end%>
